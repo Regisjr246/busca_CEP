@@ -1,17 +1,14 @@
-import React from "react";
+import React from 'react'
 import styles from './Footer.module.css'
 
 const Footer = () => {
-
-
     return (
-<footer className={styles.footer}>
-<p>
-<span> Buscador de CEP</span> @SENAI
-</p>
-</footer>
-
-);
+        <footer className={styles.footer}>
+            <p>
+                <span>Buscador de CEP</span> @SENAI
+            </p>
+        </footer>
+    );
 }
-export default Footer;
 
+export default Footer;

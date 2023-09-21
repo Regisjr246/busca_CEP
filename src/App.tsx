@@ -1,27 +1,11 @@
 import React from 'react';
-import Header from './components/Heater';
-import Footer from './components/Footer'
-import BuscaCep from './components/BuscaCepForm';
-import styles from "./App.module.css"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (
-   <div>
-<Header/>
-
-<main className={styles.main}>
-
-  <BuscaCep/>
-
-</main>
-
-
-<Footer/>
-
-   </div>
+   <AppRouter/>
   );
 }
 
 export default App;
-
