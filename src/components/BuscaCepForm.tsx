@@ -18,7 +18,7 @@ const BuscaCep = () => {
         fetch('https://viacep.com.br/ws/'+cep+'/json/',
         {
             method: 'GET'
-        }).then(Response => Response.json()).then(
+        } ). then(Response => Response.json()).then(
             data => {
                 setLocalidade(data.localidade);
                 setCep(data.cep);
