@@ -43,6 +43,7 @@ dados,
         "   Content-Type": "aplication/json"
     }
 }).then(function(response){
+    
 window.location.href= "/listagem";
 }).catch(function(error){
     console.log('Ocorreu um erro ao atualizar');
