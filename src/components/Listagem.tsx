@@ -5,6 +5,7 @@ import React, {
 import { CadastroInterface } from '../interfaces/CadastroInterface';
 import styles from "../App.module.css"
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 const Listagem = () => {
     const [usuarios, setUsuarios] = useState<CadastroInterface[]>([]);
     const [pesquisa, setPesquisa] = useState<string>('');
@@ -106,7 +107,12 @@ const Listagem = () => {
                                             <td>{usuario.nome}</td>
                                             <td>{usuario.cpf}</td>
                                             <td>{usuario.email}</td>
-                                            <td> <a href="#" className='btn btn-primary btn-sm'>Editar</a>
+
+
+
+
+
+                                            <td> <Link to={"/editar/" + usuario.id} className='btn btn-primary btn-sm'>Editar</Link>
                                                 <a href="#" className='btn btn-danger btn-sm'>Excluir</a></td>
                                         </tr>
                                     ))}

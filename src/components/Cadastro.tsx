@@ -67,10 +67,6 @@ const Cadastro = () => {
         if (e.target.name === "password") {
             setPassword(e.target.value);
         }
-
-
-
-
     }
 
     return (
